@@ -5,6 +5,12 @@ document.getElementById('contactForm').addEventListener('submit', async function
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
+    const data = {
+        name: name,
+        email: email,
+        message: message
+    };
+
     const token = '8558684655:AAGdGuoHWxN_74_NJzIY5WrqryknFa3uGSM';
     const chatId = '6156910611';
     const text = `📩 Yangi xabar!\n👤 Ism: ${name}\n📧 Email: ${email}\n📝 Xabar: ${message || 'Xabar yoʻq'}`;
