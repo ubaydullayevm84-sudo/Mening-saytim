@@ -21,11 +21,19 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Telegram Bot Gateway</h1>
-        <p>Bu erda sizning Telegram bot integratsiyasi loyihangiz haqida batafsil ma'lumot bo'ladi.</p>
-        <a href="index.html" class="back-link">← Orqaga qaytish</a>
+    <div class="lang-switcher">
+        <button id="langBtn" onclick="toggleLanguage()">English</button>
     </div>
+
+    <div class="container">
+        <h1 data-uz="Telegram Bot Gateway" data-en="Telegram Bot Gateway">Telegram Bot Gateway</h1>
+        <p data-uz="Bu erda sizning Telegram bot integratsiyasi loyihangiz haqida batafsil ma'lumot bo'ladi."
+            data-en="Here will be detailed information about your Telegram bot integration project.">Bu erda sizning
+            Telegram bot integratsiyasi loyihangiz haqida batafsil ma'lumot bo'ladi.</p>
+        <a href="index.html" class="back-link" data-uz="← Orqaga qaytish" data-en="← Back to home">← Orqaga qaytish</a>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
