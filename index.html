@@ -1,55 +1,78 @@
-<!Doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="uz">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirshod Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="lang-switcher">
+        <button id="langBtn" onclick="toggleLanguage()">English</button>
+    </div>
+
     <header>
         <h1>Mirshod Ubaydullayev</h1>
-        <p>Frontend & Backend Developer</p>
+        <p data-uz="Frontend & Backend Developer" data-en="Frontend & Backend Developer">Frontend & Backend Developer
+        </p>
     </header>
+
     <section class="about">
-        <h2>Men haqimda</h2>
-        <p>Men zamonaviy va foydalanuvchilar uchun qulay veb-saytlar hamda ilovalar yarataman. Har bir loyihaga
+        <h2 data-uz="Men haqimda" data-en="About Me">Men haqimda</h2>
+        <p data-uz="Men zamonaviy va foydalanuvchilar uchun qulay veb-saytlar hamda ilovalar yarataman. Har bir loyihaga individual yondashaman."
+            data-en="I build modern and user-friendly websites and applications. I approach each project individually.">
+            Men zamonaviy va foydalanuvchilar uchun qulay veb-saytlar hamda ilovalar yarataman. Har bir loyihaga
             individual yondashaman.</p>
     </section>
 
     <section id="projects" class="projects">
-        <h2>Mening loyihalarim</h2>
+        <h2 data-uz="Mening loyihalarim" data-en="My Projects">Mening loyihalarim</h2>
         <div class="project-grid">
             <div class="project-card">
-                <h3>E-commerce Sayt</h3>
-                <p>To'liq onlayn do'kon platformasi. Savatcha, to'lov tizimi va admin panel.</p>
-                <a href="#" class="btn-small">Ko'rish</a>
+                <h3 data-uz="E-commerce Sayt" data-en="E-commerce Site">E-commerce Sayt</h3>
+                <p data-uz="To'liq onlayn do'kon platformasi. Savatcha, to'lov tizimi va admin panel."
+                    data-en="Full online store platform. Cart, payment system, and admin panel.">To'liq onlayn do'kon
+                    platformasi. Savatcha, to'lov tizimi va admin panel.</p>
+                <a href="ecommerce.html" class="btn-small" data-uz="Ko'rish" data-en="View">Ko'rish</a>
             </div>
             <div class="project-card">
-                <h3>Landing Page</h3>
-                <p>Mahsulot yoki xizmatni reklama qilish uchun mo'ljallangan bir sahifali sayt.</p>
-                <a href="#" class="btn-small">Ko'rish</a>
+                <h3 data-uz="Landing Page" data-en="Landing Page">Landing Page</h3>
+                <p data-uz="Mahsulot yoki xizmatni reklama qilish uchun mo'ljallangan bir sahifali sayt."
+                    data-en="Single-page site designed to promote a product or service.">Mahsulot yoki xizmatni reklama
+                    qilish uchun mo'ljallangan bir sahifali sayt.</p>
+                <a href="landing.html" class="btn-small" data-uz="Ko'rish" data-en="View">Ko'rish</a>
             </div>
             <div class="project-card">
-                <h3>Telegram Bot Gateway</h3>
-                <p>Veb-sayt xabarlarini to'g'ridan-to'g'ri Telegramga yuboruvchi integratsiya.</p>
-                <a href="#" class="btn-small">Ko'rish</a>
+                <h3 data-uz="Telegram Bot Gateway" data-en="Telegram Bot Gateway">Telegram Bot Gateway</h3>
+                <p data-uz="Veb-sayt xabarlarini to'g'ridan-to'g'ri Telegramga yuboruvchi integratsiya."
+                    data-en="Integration that sends website messages directly to Telegram.">Veb-sayt xabarlarini
+                    to'g'ridan-to'g'ri Telegramga yuboruvchi integratsiya.</p>
+                <a href="bot.html" class="btn-small" data-uz="Ko'rish" data-en="View">Ko'rish</a>
             </div>
         </div>
     </section>
+
     <section class="contact">
-        <h2>Men bilan bog'lanish</h2>
+        <h2 data-uz="Men bilan bog'lanish" data-en="Contact Me">Men bilan bog'lanish</h2>
         <form id="contactForm">
-            <input type="text" id="name" placeholder="Ismingiz" required>
-            <input type="email" id="email" placeholder="Email manzilingiz" required>
-            <textarea id="message" placeholder="Xabaringiz"></textarea>
-            <button type="submit">Xabar yuborish</button>
+            <input type="text" id="name" placeholder="Ismingiz" required data-uz-placeholder="Ismingiz"
+                data-en-placeholder="Your Name">
+            <input type="email" id="email" placeholder="Email manzilingiz" required
+                data-uz-placeholder="Email manzilingiz" data-en-placeholder="Your Email">
+            <input type="text" id="contact_handle" placeholder="Telegram @username yoki Telefon"
+                data-uz-placeholder="Telegram @username yoki Telefon" data-en-placeholder="Telegram @username or Phone">
+            <textarea id="message" placeholder="Xabaringiz" data-uz-placeholder="Xabaringiz"
+                data-en-placeholder="Your Message"></textarea>
+            <button type="submit" data-uz="Xabar yuborish" data-en="Send Message">Xabar yuborish</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2026 Mirshod Ubaydullayev. Barcha huquqlar himoyalangan.</p>
+        <p data-uz="&copy; 2026 Mirshod Ubaydullayev. Barcha huquqlar himoyalangan."
+            data-en="&copy; 2026 Mirshod Ubaydullayev. All rights reserved.">&copy; 2026 Mirshod Ubaydullayev. Barcha
+            huquqlar himoyalangan.</p>
     </footer>
     <script src="script.js"></script>
 </body>

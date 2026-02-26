@@ -166,6 +166,33 @@ footer {
     color: #475569;
 }
 
+
+/* ===== Language Switcher ===== */
+.lang-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#langBtn {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#langBtn:hover {
+    background: #38bdf8;
+    color: #0f172a;
+    border-color: #38bdf8;
+}
+
 /* ===== Mobile Optimization ===== */
 @media (max-width: 768px) {
     header h1 {
@@ -174,5 +201,10 @@ footer {
 
     section {
         padding: 40px 20px;
+    }
+
+    .lang-switcher {
+        top: 10px;
+        right: 10px;
     }
 }
